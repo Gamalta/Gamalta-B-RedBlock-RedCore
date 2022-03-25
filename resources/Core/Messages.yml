@@ -1,0 +1,61 @@
+Maintenance:
+  Usage:
+    Default: "La commande est /maintenance <on/off/whitelist>"
+    Whitelist:
+      Default: "La commande est /maintenance whitelist <add/remove>"
+      Add: "la commande est /maintenance whitelist add <Player>"
+      Remove: "la commande est /maintenance whitelist remove <Player>"
+  Statue:
+    Enable: "La maintenance viens d'être activé"
+    AlreadyEnable: "La maintenance est déjà activé"
+    ServerNotFound: "le serveur %server% n'existe pas !"
+    Disable: "La maintenance viens d'être désactivé"
+    AlreadyDisable: "La maintenance est déjà désactivé"
+  Whitelist:
+    List:
+      Title: "Liste des joueur whitelist"
+      Format: "- %pseudo%"
+    Added: "le joueur %pseudo% à bien été ajouter"
+    Removed: "le joueur %pseudo% à bien été retirer"
+    AlreadyAdded: "Le joueur %psuedo% est déjà dans la maintenance"
+    PlayerNotFound: "Le joueur %pseudo% n'été pas dans la whitelist"
+  TryConnect: "&7[Maintenance] &a%player% à essayé de ce connecter mais le serveur est en maintenance !"                                                 #Message sur les serveurs quand un joueur essaye de ce connecter pendant une maintenance
+  Kick: "&cLe serveur est en maintenance &6Informations&e: &c(Sur &ddiscord &c➜ &c&nhttps://discord.gg/Uqp7egj&0 &4&l!&c)"                       #Message envoyé au joueur quand il essaye de ce connecter pendant une maintenance
+  Permission: "vous n'avez pas accès à cet commande"
+
+StaffChat:
+  Format: "&7[StaffChat] &3%sender% &2[&e%sender_server%&2] &8| &b%message%"                                                                             #Format des messages du "StaffChat"
+  Enable: "&7StaffChat &aactivé"                                                                                                                         #Message lors de l'activation du "StaffChat"
+  Disable: "&7StaffChat &cdésactivé"                                                                                                                     #Message lors de la désactivation du "StaffChat"
+  Usage: "la commande est ! <message>"                                                                                                                   #Message quand un membre du staff fais juste ! car si il fait juste /StaffChat ça lui active/désactive
+  Permission: "&cVous n'avez pas accès à cette commande."                                                                                                #Message quand un joueur essaye de parler dans le "StaffChat"
+
+PrivateMessages:
+  Messages:
+    Usage: "/msg <joueur> <message>"                                                                                                                     #Message quand un joueur fait juste /msg ou /msg <player>
+    NoPlayerFound: "&7Le joueur &c%player% &7n'est plus en &aligne &7!"                                                                                  #Message quand un joueur essaye de parler avec un joueur qui n'existe pas ou n'est pas en ligne
+    Alone: "Vous ne pouvez pas vous auto-parler !"                                                                                                       #Message quand un joueur essaye de s'auto-parler
+  Reply:
+    Usage: "/reply <message>"                                                                                                                            #Message quand un joueur fait juste /reply
+    NoPlayerOnline: "&7Le joueur &a%player% &7n'est pas en &aligne !"                                                                                    #Message quand la cible n'est pas en ligne
+    NoPlayerFound: "&7Vous devez parler à quelqu'un avant de lui repondre"                                                                               #Message quand le joueur n'a pas de cible
+  SocialSpy:
+    Enable: "Socialspy &aactivé"                                                                                                                         #Message lors de l'activation du "SocialSpy"
+    Disable: "Socialspy &cdésactivé"                                                                                                                     #Message lors de la désactivation du "SocialSpy"
+    Permission: "&cVous n'avez pas accès à cette commande."                                                                                              #Message quand un joueur essaye de faire /SocialSpy
+    Usage: "la commande est /socialSpy optional <on/off>"                                                                                                #Message quand un menbre du staff fais autre chose que /SocialSpy /SocialSpy on /SocialSpy off /SocialSpy true /SocialSpy false
+  Format:
+    Sender: "&7Envoyé à %target% &2[&e%server%&2] &8 | &b%message%"                                                                                      #Format de l'envoyeur d'un message privé
+    Reciever: "&7Reçu de %sender% &2[&e%server%&2] &8 | &b%message%"                                                                                     #Format du receveur d'un message privé
+    SocialSpy: "&7[SocialSPY] &3%sender% &2[&e%sender_server%&2] &7-> &3%receiver% &2[&e%receiver_server%&2] &8| &b%message%"                            #Format d'un message privé pour le "SocialSpy"
+  Console: "Vous ne pouvez pas msg depuis la console"
+
+PluginList: "Plugin (1): &aRedCore by Gamalta le best !!"                                                                                            #Message lors du /plugins /pl si il est activé dans Settings.yml
+
+ReloadConfig: "les configs ont bien été rechargées."                                                                                                      #Message lots d'un /B-OsgarodCore /BOsgarodCore /B-Core /BCore
+
+BannedCommands: "&cCet &4&lcommande &cn'existe pas."                                                                          #Message quand un joueur exectue une commande désactiver
+BannedWords: "&cCe &4&lmots est &4&ninterdit &csur ce serveur."                                                                          #Message quand un joueur prononce un mots désactiver
+Flood: "&cLe &4&lFlood est &4&ninterdit &csur ce serveur."                                                                          #Message quand un joueur essaye de "Flood"
+Spam: "Le &4&lSpam &cest &4&ninterdit sur ce serveur."                                                                           #Message quand un joueur essaye d'envoyé plus de deux fois le même message de suite
+Maj: "N'abusez pas des &4&lmajuscules&c."                                                                          #Message quand un joueur essaye d'envoyé plus que le pourcentage de majuscule défini

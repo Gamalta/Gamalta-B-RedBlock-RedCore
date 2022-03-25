@@ -1,0 +1,10 @@
+BannedCommandsBypass: redblock.banned.commands.bypass                                      #Permission pour pouvoir executer les commandes désactiver
+BannedWordsBypass: redblock.banned.words.bypass                                            #Permission pour pouvoir dire des mots désactiver
+FloodBypass: redblock.flood.bypass                                                         #Permission pour pouvoir "Flood"
+MajBypass: redblock.maj.bypass                                                             #Permission pour pouvoir mettre plus de majuscule que le pourcentage autorisé
+SpamBypass: redblock.spam.bypass                                                           #Permission pour pouvoir envoyé un message plus de 2 fois de suite
+SocialSpy: redblock.socialspy.use                                                          #Permission pour pouvoir s'activer le "SocialSpy"
+StaffChat: redblock.staffchat.use                                                          #Permission pour pouvoir parler dans le "StaffChat"
+PluginListBypass: redblock.plugin.list.bypass                                              #Permission pour voir la réel liste des plugins
+ReloadConfig: redblock.reload.config                                                       #Permission pour pouvoir recharger les fichiers de configuration de ce plugin
+Maintenance: redblock.commands.maintenance                                                 #Permission pour pouvoir activer desactiver la maintenance et modifier la whithelist

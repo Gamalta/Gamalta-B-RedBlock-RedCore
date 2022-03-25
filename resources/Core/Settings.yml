@@ -1,0 +1,78 @@
+Motd:
+  Motd:                                                                                                           #Motd du serveur bungeeCord
+    - "&1&lOsga&9&lrod&6&l.&b&lFr &r| &6Serveur &eNetwork &c1.17"
+    - "             &c&lMAINTENANCE DU SERVEUR &4&l!"
+    
+  PlayerCount: "&6Informations&e: &c(Sur &ddiscord &4&l!&c)"                                                      #%online_players% -> nombre de joueur en ligne
+  OnlinePlayerListCustom: true                                                                                    #Liste personnalisée des joueurs en ligne ?
+  OnlinePlayerList:                                                                                               #Liste des joueurs en ligne
+    - "&6Informations&e: &c(Sur &ddiscord &c-> &c&nhttps://discord.gg/Uqp7egj&0 &4&l!&c)"
+    
+Maintenance:
+  Default: "Lobby"
+  ConnectAlert: true
+  Server:
+    Global: false                                                                                                 #Maintenance Active ?
+  Whitelist:                                                                                                      #Liste des joueurs pouvants ce connecter même pendant une maintenance
+    - "SkinkFrize"
+    - "Gamalta"
+    - "Sigmalta"
+  Alert:
+    '0':
+      Message: "Une maintenance viens d'être activé vous aller être kick"
+      Title:
+        Title: "&4&lAlert"
+        SubTitle: "&cmaintenance"
+        FadeIn: 20
+        Stay: 20
+        FadeOut: 20
+      Sound:
+        Type: BLOCK_CHEST_OPEN
+        Volume: 1F
+        Pitch: 1F
+      Time: 0                                                                                                     #Message quand les joueurs essaye de ce connecter ?
+
+Flood: 4                                                                                                          #nombre de caractère identique de suite pour etre considéré comme du "flood"
+Maj: 75                                                                                                           #en pourcentage
+CustomPluginList: true                                                                                            #message custom /plugins
+
+CommandsAliases:
+  '1':
+    Command: "/ts"                                                                                                #Commande ecrite par le joueur
+    Result: "/teamspeak"                                                                                          #Commande executer par le joueur
+
+CommandsBasic:
+  '1':
+    Command: "/teamspeak"                                                                                         #Commande executer par le joueur
+    Message: "le liens du teamspeak est ts.redblock.fr"                                                           #Message envoyer au joueur
+    
+CommandsWithModeration:                                                                                           #Commande avec le Flood Maj Spam Banned Words
+  - "/staffchat"
+  - "/sc"
+  - "/msg"
+  - "/m"
+  - "/tell"
+  - "/t"
+  - "/whisper"
+  - "/w"
+  - "/reply"
+  - "/r"
+
+CommandsBanned:                                                                                                   #Commande désactiver (ne pas oubliez /plugins et /pl en fonction de "CustomPluginList")
+  - "/bukkit:?"
+  - "/?"
+  - "/ver"
+  - "/version"
+  - "/gc"
+  - "/icanhasbukkit"
+  - "/a"
+  - "/about"
+  - "/bukkit:ver"
+  - "/bukkit:version"
+  - "/bukkit:about"
+  - "/bukkit:a"
+  - "/bukkit:help"
+  - "/minewebbridge"
+  - "/mineweb"
+  - "/minewebbridge:minewebbridge"
+  - "/minewebbridge:mineweb"
